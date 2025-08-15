@@ -1,0 +1,134 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#FFF3E0" stroke="#E65100" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#FF9800"/>
+  <text x="200" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Backtracking</text>
+  <text x="200" y="75" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Solution Hunter</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">4</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(30, 110)">
+    <text x="170" y="20" text-anchor="middle" font-size="16" fill="#E65100" font-weight="bold">The Try-Undo-Retry Master</text>
+    
+    <!-- N-Queens Example (4x4) -->
+    <g transform="translate(0, 40)">
+      <text x="0" y="0" font-size="12" fill="#666">Example: 4-Queens Problem</text>
+      <text x="0" y="15" font-size="10" fill="#666">Place 4 queens on 4×4 board (no attacks)</text>
+      
+      <!-- 4x4 Chessboard -->
+      <g transform="translate(40, 30)">
+        <!-- Board squares -->
+        <rect x="0" y="0" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="30" y="0" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="60" y="0" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="90" y="0" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        
+        <rect x="0" y="30" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="30" y="30" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="60" y="30" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="90" y="30" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        
+        <rect x="0" y="60" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="30" y="60" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="60" y="60" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="90" y="60" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        
+        <rect x="0" y="90" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="30" y="90" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        <rect x="60" y="90" width="30" height="30" fill="#FFCC02" stroke="#E65100"/>
+        <rect x="90" y="90" width="30" height="30" fill="#FFE0B2" stroke="#E65100"/>
+        
+        <!-- Solution: Queens at (0,1), (1,3), (2,0), (3,2) -->
+        <text x="15" y="50" text-anchor="middle" font-size="16" fill="#E91E63">♛</text>
+        <text x="105" y="50" text-anchor="middle" font-size="16" fill="#E91E63">♛</text>
+        <text x="15" y="80" text-anchor="middle" font-size="16" fill="#E91E63">♛</text>
+        <text x="75" y="110" text-anchor="middle" font-size="16" fill="#E91E63">♛</text>
+        
+        <!-- Coordinate labels -->
+        <text x="15" y="-5" text-anchor="middle" font-size="8" fill="#666">0</text>
+        <text x="45" y="-5" text-anchor="middle" font-size="8" fill="#666">1</text>
+        <text x="75" y="-5" text-anchor="middle" font-size="8" fill="#666">2</text>
+        <text x="105" y="-5" text-anchor="middle" font-size="8" fill="#666">3</text>
+        
+        <text x="-10" y="20" text-anchor="middle" font-size="8" fill="#666">0</text>
+        <text x="-10" y="50" text-anchor="middle" font-size="8" fill="#666">1</text>
+        <text x="-10" y="80" text-anchor="middle" font-size="8" fill="#666">2</text>
+        <text x="-10" y="110" text-anchor="middle" font-size="8" fill="#666">3</text>
+      </g>
+      
+      <text x="200" y="80" font-size="10" fill="#4CAF50" font-weight="bold">✓ Valid Solution!</text>
+    </g>
+    
+    <!-- Algorithm Steps -->
+    <g transform="translate(0, 210)">
+      <text x="170" y="0" text-anchor="middle" font-size="14" fill="#E65100" font-weight="bold">The Backtracking Recipe:</text>
+      
+      <rect x="0" y="10" width="340" height="120" fill="#FFF8F0" stroke="#E65100" rx="5"/>
+      
+      <text x="10" y="30" font-size="11" fill="#666" font-weight="bold">1. Choose:</text>
+      <text x="30" y="45" font-size="10" fill="#666">Pick a candidate solution</text>
+      
+      <text x="10" y="65" font-size="11" fill="#666" font-weight="bold">2. Explore:</text>
+      <text x="30" y="80" font-size="10" fill="#666">Check if it leads to a valid solution</text>
+      
+      <text x="10" y="100" font-size="11" fill="#666" font-weight="bold">3. Undo (Backtrack):</text>
+      <text x="30" y="115" font-size="10" fill="#666">If invalid, remove choice and try next option</text>
+      
+      <!-- Decision tree illustration -->
+      <g transform="translate(200, 20)">
+        <text x="60" y="0" text-anchor="middle" font-size="10" fill="#E65100" font-weight="bold">Decision Tree:</text>
+        
+        <!-- Root -->
+        <circle cx="60" cy="15" r="8" fill="#FFE0B2" stroke="#E65100"/>
+        <text x="60" y="19" text-anchor="middle" font-size="7">Start</text>
+        
+        <!-- Level 1 -->
+        <circle cx="30" cy="40" r="6" fill="#FFCC02" stroke="#E65100"/>
+        <text x="30" y="43" text-anchor="middle" font-size="6">Try A</text>
+        
+        <circle cx="90" cy="40" r="6" fill="#FFCC02" stroke="#E65100"/>
+        <text x="90" y="43" text-anchor="middle" font-size="6">Try B</text>
+        
+        <!-- Level 2 -->
+        <circle cx="15" cy="65" r="5" fill="#FFB74D" stroke="#E65100"/>
+        <text x="15" y="68" text-anchor="middle" font-size="5">Valid</text>
+        
+        <circle cx="45" cy="65" r="5" fill="#FF5722" stroke="#D32F2F"/>
+        <text x="45" y="68" text-anchor="middle" font-size="5" fill="white">X</text>
+        
+        <!-- Lines -->
+        <line x1="60" y1="23" x2="30" y2="34" stroke="#E65100"/>
+        <line x1="60" y1="23" x2="90" y2="34" stroke="#E65100"/>
+        <line x1="30" y1="46" x2="15" y2="60" stroke="#E65100"/>
+        <line x1="30" y1="46" x2="45" y2="60" stroke="#E65100"/>
+        
+        <!-- Backtrack arrow -->
+        <path d="M 40 55 Q 35 50 40 45" stroke="#FF5722" stroke-width="2" fill="none" marker-end="url(#arrowred)"/>
+        <text x="25" y="85" font-size="7" fill="#FF5722">Backtrack!</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="450" width="350" height="80" rx="8" fill="#FFF8F0" stroke="#FF9800" stroke-width="2"/>
+  <text x="200" y="475" text-anchor="middle" font-size="18" fill="#E65100" font-weight="bold">Exhaustive Search Master</text>
+  <text x="200" y="495" text-anchor="middle" font-size="14" fill="#666">• Finds ALL solutions systematically</text>
+  <text x="200" y="510" text-anchor="middle" font-size="14" fill="#666">• Prunes invalid branches early</text>
+  <text x="200" y="525" text-anchor="middle" font-size="14" fill="#666">• Space-efficient exploration</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="540" width="350" height="30" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <text x="200" y="560" text-anchor="middle" font-size="13" fill="#666">Sudoku solver • N-Queens • Constraint satisfaction • AI planning</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowred" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,5 6,2.5" fill="#FF5722"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,78 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#E8F5E8" stroke="#2E7D32" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#4CAF50"/>
+  <text x="200" y="65" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Prefix Sum</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">1</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(50, 110)">
+    <text x="150" y="20" text-anchor="middle" font-size="16" fill="#2E7D32" font-weight="bold">The Cumulative Growth Pattern</text>
+    
+    <!-- Original Array -->
+    <text x="0" y="50" font-size="14" fill="#666">Original Array:</text>
+    <rect x="0" y="60" width="40" height="30" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="20" y="80" text-anchor="middle" font-size="14" font-weight="bold">3</text>
+    
+    <rect x="50" y="60" width="40" height="30" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="70" y="80" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+    
+    <rect x="100" y="60" width="40" height="30" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="120" y="80" text-anchor="middle" font-size="14" font-weight="bold">4</text>
+    
+    <rect x="150" y="60" width="40" height="30" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="170" y="80" text-anchor="middle" font-size="14" font-weight="bold">2</text>
+    
+    <rect x="200" y="60" width="40" height="30" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="220" y="80" text-anchor="middle" font-size="14" font-weight="bold">5</text>
+    
+    <!-- Arrow -->
+    <path d="M 150 110 L 150 140" stroke="#2E7D32" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- Prefix Sum Array -->
+    <text x="0" y="170" font-size="14" fill="#666">Prefix Sum:</text>
+    
+    <!-- Growing bars to show accumulation -->
+    <rect x="0" y="180" width="40" height="30" fill="#81C784" stroke="#388E3C" stroke-width="2"/>
+    <text x="20" y="200" text-anchor="middle" font-size="14" font-weight="bold">3</text>
+    
+    <rect x="50" y="170" width="40" height="40" fill="#66BB6A" stroke="#388E3C" stroke-width="2"/>
+    <text x="70" y="195" text-anchor="middle" font-size="14" font-weight="bold">4</text>
+    
+    <rect x="100" y="160" width="40" height="50" fill="#4CAF50" stroke="#388E3C" stroke-width="2"/>
+    <text x="120" y="190" text-anchor="middle" font-size="14" font-weight="bold">8</text>
+    
+    <rect x="150" y="150" width="40" height="60" fill="#388E3C" stroke="#2E7D32" stroke-width="2"/>
+    <text x="170" y="185" text-anchor="middle" font-size="14" font-weight="bold">10</text>
+    
+    <rect x="200" y="140" width="40" height="70" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+    <text x="220" y="180" text-anchor="middle" font-size="14" font-weight="bold">15</text>
+    
+    <text x="150" y="240" text-anchor="middle" font-size="12" fill="#2E7D32" font-style="italic">Each value = sum of all previous elements</text>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="380" width="350" height="80" rx="8" fill="#F1F8E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="405" text-anchor="middle" font-size="18" fill="#2E7D32" font-weight="bold">Range Query Mastery</text>
+  <text x="200" y="430" text-anchor="middle" font-size="14" fill="#666">• O(1) subarray sum calculations</text>
+  <text x="200" y="450" text-anchor="middle" font-size="14" fill="#666">• Perfect for analytics and financial data</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="480" width="350" height="80" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="505" text-anchor="middle" font-size="16" fill="#2E7D32" font-weight="bold">🌟 Real World Magic</text>
+  <text x="200" y="525" text-anchor="middle" font-size="13" fill="#666">Database query optimization</text>
+  <text x="200" y="542" text-anchor="middle" font-size="13" fill="#666">Running totals in spreadsheets</text>
+  <text x="200" y="559" text-anchor="middle" font-size="13" fill="#666">Time-series data analysis</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#2E7D32"/>
+    </marker>
+  </defs>
+</svg>

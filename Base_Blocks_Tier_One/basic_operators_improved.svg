@@ -1,0 +1,177 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#FFF8E1" stroke="#F57F17" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#FBC02D"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="26" font-weight="bold">Basic Operators</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Calculation Engine</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#CDDC39" stroke="#827717" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">1</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(10, 110)">
+    <text x="190" y="20" text-anchor="middle" font-size="16" fill="#F57F17" font-weight="bold">Mathematical Operations Across Languages</text>
+    
+    <!-- Arithmetic Section -->
+    <g transform="translate(0, 40)">
+      <text x="190" y="0" text-anchor="middle" font-size="14" fill="#F57F17" font-weight="bold">Arithmetic Operators</text>
+      
+      <!-- Python Math -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="185" height="100" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a + b</text>
+        <text x="55" y="32" font-size="9" fill="#666"># Addition</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a - b</text>
+        <text x="55" y="47" font-size="9" fill="#666"># Subtraction</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">a * b</text>
+        <text x="55" y="62" font-size="9" fill="#666"># Multiplication</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">a / b</text>
+        <text x="55" y="77" font-size="9" fill="#666"># True division</text>
+        
+        <text x="8" y="92" font-size="10" font-family="monospace" fill="#333">a ** b</text>
+        <text x="60" y="92" font-size="9" fill="#666"># Exponentiation</text>
+      </g>
+      
+      <!-- JavaScript Math -->
+      <g transform="translate(195, 20)">
+        <rect x="0" y="0" width="185" height="100" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a + b</text>
+        <text x="55" y="32" font-size="9" fill="#666">// Addition</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a - b</text>
+        <text x="55" y="47" font-size="9" fill="#666">// Subtraction</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">a * b</text>
+        <text x="55" y="62" font-size="9" fill="#666">// Multiplication</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">a / b</text>
+        <text x="55" y="77" font-size="9" fill="#666">// Division</text>
+        
+        <text x="8" y="92" font-size="10" font-family="monospace" fill="#333">a ** b</text>
+        <text x="60" y="92" font-size="9" fill="#666">// Power (ES2016+)</text>
+      </g>
+    </g>
+    
+    <!-- Special Operations -->
+    <g transform="translate(0, 170)">
+      <text x="190" y="0" text-anchor="middle" font-size="14" fill="#F57F17" font-weight="bold">Special Math Operations</text>
+      
+      <!-- Python Special -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="185" height="85" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a // b</text>
+        <text x="60" y="32" font-size="9" fill="#666"># Floor division</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a % b</text>
+        <text x="60" y="47" font-size="9" fill="#666"># Modulo (remainder)</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">abs(a)</text>
+        <text x="60" y="62" font-size="9" fill="#666"># Absolute value</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">round(a, 2)</text>
+        <text x="80" y="77" font-size="9" fill="#666"># Round to 2 decimals</text>
+      </g>
+      
+      <!-- C# Special -->
+      <g transform="translate(195, 20)">
+        <rect x="0" y="0" width="185" height="85" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C#</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a / b</text>
+        <text x="60" y="32" font-size="9" fill="#666">// Integer division</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a % b</text>
+        <text x="60" y="47" font-size="9" fill="#666">// Modulo operator</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">Math.Abs(a)</text>
+        <text x="85" y="62" font-size="9" fill="#666">// Absolute value</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">Math.Round(a, 2)</text>
+        <text x="105" y="77" font-size="9" fill="#666">// Round to 2 places</text>
+      </g>
+    </g>
+    
+    <!-- Comparison Operations -->
+    <g transform="translate(0, 275)">
+      <text x="190" y="0" text-anchor="middle" font-size="14" fill="#F57F17" font-weight="bold">Comparison &amp; Logic</text>
+      
+      <!-- Python Comparison -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="185" height="100" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a == b</text>
+        <text x="60" y="32" font-size="9" fill="#666"># Equal to</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a != b</text>
+        <text x="60" y="47" font-size="9" fill="#666"># Not equal to</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">a and b</text>
+        <text x="70" y="62" font-size="9" fill="#666"># Logical AND</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">a or b</text>
+        <text x="60" y="77" font-size="9" fill="#666"># Logical OR</text>
+        
+        <text x="8" y="92" font-size="10" font-family="monospace" fill="#333">not a</text>
+        <text x="60" y="92" font-size="9" fill="#666"># Logical NOT</text>
+      </g>
+      
+      <!-- JavaScript Comparison -->
+      <g transform="translate(195, 20)">
+        <rect x="0" y="0" width="185" height="100" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="92" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        
+        <text x="8" y="32" font-size="10" font-family="monospace" fill="#333">a === b</text>
+        <text x="70" y="32" font-size="9" fill="#666">// Strict equality</text>
+        
+        <text x="8" y="47" font-size="10" font-family="monospace" fill="#333">a !== b</text>
+        <text x="70" y="47" font-size="9" fill="#666">// Strict not equal</text>
+        
+        <text x="8" y="62" font-size="10" font-family="monospace" fill="#333">a &amp;&amp; b</text>
+        <text x="60" y="62" font-size="9" fill="#666">// Logical AND</text>
+        
+        <text x="8" y="77" font-size="10" font-family="monospace" fill="#333">a || b</text>
+        <text x="60" y="77" font-size="9" fill="#666">// Logical OR</text>
+        
+        <text x="8" y="92" font-size="10" font-family="monospace" fill="#333">!a</text>
+        <text x="35" y="92" font-size="9" fill="#666">// Logical NOT</text>
+      </g>
+    </g>
+    
+    <!-- Pro Tips -->
+    <g transform="translate(0, 400)">
+      <text x="190" y="0" text-anchor="middle" font-size="14" fill="#F57F17" font-weight="bold">Pro Tips &amp; Gotchas:</text>
+      
+      <rect x="15" y="10" width="350" height="85" fill="#FFFEF7" stroke="#F57F17" rx="5"/>
+      
+      <text x="25" y="30" font-size="11" fill="#E65100" font-weight="bold">JavaScript:</text>
+      <text x="95" y="30" font-size="10" fill="#666">Use === instead of == to avoid type coercion</text>
+      
+      <text x="25" y="50" font-size="11" fill="#E65100" font-weight="bold">Python:</text>
+      <text x="80" y="50" font-size="10" fill="#666">// gives floor division, / gives true division</text>
+      
+      <text x="25" y="70" font-size="11" fill="#4A148C" font-weight="bold">C#:</text>
+      <text x="60" y="70" font-size="10" fill="#666">Integer division truncates, use (double) for decimal results</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="530" width="350" height="30" rx="8" fill="#FFFEF7" stroke="#FBC02D" stroke-width="2"/>
+  <text x="200" y="550" text-anchor="middle" font-size="18" fill="#F57F17" font-weight="bold">Calculation Foundation</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="565" width="350" height="15" rx="8" fill="#FFF8E1" stroke="#FBC02D" stroke-width="2"/>
+  <text x="200" y="575" text-anchor="middle" font-size="13" fill="#666">Financial calculations • Game scoring • Data validation • Business logic</text>
+</svg>

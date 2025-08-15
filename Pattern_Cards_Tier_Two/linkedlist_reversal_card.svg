@@ -1,0 +1,136 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#FFEBEE" stroke="#C62828" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#F44336"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">LinkedList Reversal</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Chain Flipper</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">2</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(30, 110)">
+    <text x="170" y="20" text-anchor="middle" font-size="16" fill="#C62828" font-weight="bold">The In-Place Chain Reversal</text>
+    
+    <!-- Original LinkedList -->
+    <g transform="translate(0, 40)">
+      <text x="0" y="0" font-size="12" fill="#666" font-weight="bold">Before:</text>
+      
+      <!-- Nodes -->
+      <circle cx="40" cy="25" r="15" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="40" y="30" text-anchor="middle" font-size="12" font-weight="bold">1</text>
+      
+      <circle cx="100" cy="25" r="15" fill="#EF9A9A" stroke="#C62828" stroke-width="2"/>
+      <text x="100" y="30" text-anchor="middle" font-size="12" font-weight="bold">2</text>
+      
+      <circle cx="160" cy="25" r="15" fill="#E57373" stroke="#C62828" stroke-width="2"/>
+      <text x="160" y="30" text-anchor="middle" font-size="12" font-weight="bold">3</text>
+      
+      <circle cx="220" cy="25" r="15" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+      <text x="220" y="30" text-anchor="middle" font-size="12" font-weight="bold">4</text>
+      
+      <circle cx="280" cy="25" r="15" fill="#F44336" stroke="#C62828" stroke-width="2"/>
+      <text x="280" y="30" text-anchor="middle" font-size="12" font-weight="bold">5</text>
+      
+      <!-- Forward arrows -->
+      <path d="M 55 25 L 85 25" stroke="#C62828" stroke-width="3" fill="none" marker-end="url(#arrowred)"/>
+      <path d="M 115 25 L 145 25" stroke="#C62828" stroke-width="3" fill="none" marker-end="url(#arrowred)"/>
+      <path d="M 175 25 L 205 25" stroke="#C62828" stroke-width="3" fill="none" marker-end="url(#arrowred)"/>
+      <path d="M 235 25 L 265 25" stroke="#C62828" stroke-width="3" fill="none" marker-end="url(#arrowred)"/>
+      
+      <!-- NULL pointer -->
+      <text x="310" y="30" font-size="10" fill="#666">NULL</text>
+    </g>
+    
+    <!-- Algorithm Steps -->
+    <g transform="translate(0, 90)">
+      <text x="170" y="0" text-anchor="middle" font-size="14" fill="#C62828" font-weight="bold">The Magic 3-Pointer Dance:</text>
+      
+      <!-- Step illustration -->
+      <g transform="translate(0, 25)">
+        <text x="0" y="0" font-size="11" fill="#666">prev = NULL, curr = head, next = ?</text>
+        
+        <!-- Pointers -->
+        <rect x="10" y="10" width="60" height="15" fill="#FFE0B2" stroke="#FF9800" stroke-width="1" rx="3"/>
+        <text x="40" y="22" text-anchor="middle" font-size="9" fill="#E65100">prev</text>
+        
+        <rect x="90" y="10" width="60" height="15" fill="#E3F2FD" stroke="#2196F3" stroke-width="1" rx="3"/>
+        <text x="120" y="22" text-anchor="middle" font-size="9" fill="#1976D2">curr</text>
+        
+        <rect x="170" y="10" width="60" height="15" fill="#E8F5E8" stroke="#4CAF50" stroke-width="1" rx="3"/>
+        <text x="200" y="22" text-anchor="middle" font-size="9" fill="#388E3C">next</text>
+        
+        <!-- Steps -->
+        <text x="0" y="45" font-size="10" fill="#666">1. next = curr.next</text>
+        <text x="0" y="60" font-size="10" fill="#666">2. curr.next = prev</text>
+        <text x="0" y="75" font-size="10" fill="#666">3. prev = curr, curr = next</text>
+      </g>
+    </g>
+    
+    <!-- Reversed LinkedList -->
+    <g transform="translate(0, 200)">
+      <text x="0" y="0" font-size="12" fill="#666" font-weight="bold">After:</text>
+      
+      <!-- Nodes -->
+      <circle cx="40" cy="25" r="15" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+      <text x="40" y="30" text-anchor="middle" font-size="12" font-weight="bold">1</text>
+      
+      <circle cx="100" cy="25" r="15" fill="#EF9A9A" stroke="#C62828" stroke-width="2"/>
+      <text x="100" y="30" text-anchor="middle" font-size="12" font-weight="bold">2</text>
+      
+      <circle cx="160" cy="25" r="15" fill="#E57373" stroke="#C62828" stroke-width="2"/>
+      <text x="160" y="30" text-anchor="middle" font-size="12" font-weight="bold">3</text>
+      
+      <circle cx="220" cy="25" r="15" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+      <text x="220" y="30" text-anchor="middle" font-size="12" font-weight="bold">4</text>
+      
+      <circle cx="280" cy="25" r="15" fill="#F44336" stroke="#C62828" stroke-width="2"/>
+      <text x="280" y="30" text-anchor="middle" font-size="12" font-weight="bold">5</text>
+      
+      <!-- Reversed arrows -->
+      <path d="M 85 25 L 55 25" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      <path d="M 145 25 L 115 25" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      <path d="M 205 25 L 175 25" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      <path d="M 265 25 L 235 25" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      
+      <!-- New head -->
+      <text x="300" y="15" font-size="10" fill="#4CAF50" font-weight="bold">NEW HEAD</text>
+      <path d="M 290 18 L 285 23" stroke="#4CAF50" stroke-width="2" fill="none" marker-end="url(#arrowgreen)"/>
+      
+      <!-- NULL pointer -->
+      <text x="10" y="15" font-size="10" fill="#666">NULL</text>
+    </g>
+    
+    <!-- Transformation arrow -->
+    <g transform="translate(170, 120)">
+      <circle cx="0" cy="0" r="25" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+      <path d="M -8 -3 L 8 0 L -8 3" stroke="#E65100" stroke-width="3" fill="none"/>
+      <text x="0" y="40" text-anchor="middle" font-size="10" fill="#E65100" font-weight="bold">FLIP!</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="420" width="350" height="80" rx="8" fill="#FFF8F8" stroke="#F44336" stroke-width="2"/>
+  <text x="200" y="445" text-anchor="middle" font-size="18" fill="#C62828" font-weight="bold">In-Place Magic</text>
+  <text x="200" y="465" text-anchor="middle" font-size="14" fill="#666">• O(1) space complexity</text>
+  <text x="200" y="485" text-anchor="middle" font-size="14" fill="#666">• Constant extra memory only</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="510" width="350" height="60" rx="8" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
+  <text x="200" y="535" text-anchor="middle" font-size="16" fill="#C62828" font-weight="bold">🔄 Real World Magic</text>
+  <text x="200" y="550" text-anchor="middle" font-size="13" fill="#666">Undo operations • Browser history • Memory management</text>
+  <text x="200" y="565" text-anchor="middle" font-size="13" fill="#666">Music playlist reversal</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#C62828"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#4CAF50"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,90 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#FFF3E0" stroke="#F57C00" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#FF9800"/>
+  <text x="200" y="65" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Sliding Window</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">2</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(30, 110)">
+    <text x="170" y="20" text-anchor="middle" font-size="16" fill="#F57C00" font-weight="bold">The Moving Window Technique</text>
+    
+    <!-- Array -->
+    <text x="0" y="50" font-size="14" fill="#666">Array: [2, 1, 4, 3, 7, 2, 5]</text>
+    
+    <!-- Array elements -->
+    <rect x="20" y="60" width="35" height="35" fill="#FFE0B2" stroke="#F57C00" stroke-width="2"/>
+    <text x="37.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">2</text>
+    
+    <rect x="65" y="60" width="35" height="35" fill="#FFCC02" stroke="#F57C00" stroke-width="2"/>
+    <text x="82.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+    
+    <rect x="110" y="60" width="35" height="35" fill="#FFB74D" stroke="#F57C00" stroke-width="2"/>
+    <text x="127.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">4</text>
+    
+    <rect x="155" y="60" width="35" height="35" fill="#FFA726" stroke="#F57C00" stroke-width="2"/>
+    <text x="172.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">3</text>
+    
+    <rect x="200" y="60" width="35" height="35" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+    <text x="217.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">7</text>
+    
+    <rect x="245" y="60" width="35" height="35" fill="#FF8F00" stroke="#F57C00" stroke-width="2"/>
+    <text x="262.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">2</text>
+    
+    <rect x="290" y="60" width="35" height="35" fill="#F57C00" stroke="#E65100" stroke-width="2"/>
+    <text x="307.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">5</text>
+    
+    <!-- Window size indicator -->
+    <text x="0" y="120" font-size="14" fill="#666">Window size: 3</text>
+    
+    <!-- Step 1: First window -->
+    <g transform="translate(0, 140)">
+      <text x="0" y="0" font-size="12" fill="#F57C00" font-weight="bold">Step 1:</text>
+      <rect x="20" y="10" width="125" height="45" fill="rgba(255,152,0,0.3)" stroke="#F57C00" stroke-width="3" stroke-dasharray="5,5" rx="5"/>
+      <text x="82.5" y="60" text-anchor="middle" font-size="12" fill="#F57C00">Sum = 2+1+4 = 7</text>
+    </g>
+    
+    <!-- Step 2: Slide right -->
+    <g transform="translate(0, 210)">
+      <text x="0" y="0" font-size="12" fill="#F57C00" font-weight="bold">Step 2:</text>
+      <rect x="65" y="10" width="125" height="45" fill="rgba(255,152,0,0.3)" stroke="#F57C00" stroke-width="3" stroke-dasharray="5,5" rx="5"/>
+      <text x="127.5" y="60" text-anchor="middle" font-size="12" fill="#F57C00">Sum = 1+4+3 = 8</text>
+      
+      <!-- Arrow showing movement -->
+      <path d="M 50 25 L 70 25" stroke="#FF5722" stroke-width="3" fill="none" marker-end="url(#arrowred)"/>
+    </g>
+    
+    <!-- Step 3: Continue sliding -->
+    <g transform="translate(0, 280)">
+      <text x="0" y="0" font-size="12" fill="#F57C00" font-weight="bold">Step 3:</text>
+      <rect x="110" y="10" width="125" height="45" fill="rgba(255,152,0,0.3)" stroke="#F57C00" stroke-width="3" stroke-dasharray="5,5" rx="5"/>
+      <text x="172.5" y="60" text-anchor="middle" font-size="12" fill="#F57C00">Sum = 4+3+7 = 14 ⭐</text>
+      
+      <!-- Best result indicator -->
+      <circle cx="300" cy="25" r="12" fill="#FFC107" stroke="#FF8F00" stroke-width="2"/>
+      <text x="300" y="30" text-anchor="middle" font-size="10" font-weight="bold">MAX</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="450" width="350" height="60" rx="8" fill="#FFF8F0" stroke="#FF9800" stroke-width="2"/>
+  <text x="200" y="475" text-anchor="middle" font-size="18" fill="#F57C00" font-weight="bold">Optimal Subarray Hunter</text>
+  <text x="200" y="495" text-anchor="middle" font-size="14" fill="#666">• O(n) time for subarray problems</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="520" width="350" height="50" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <text x="200" y="540" text-anchor="middle" font-size="16" fill="#F57C00" font-weight="bold">🔥 Real World Magic</text>
+  <text x="200" y="555" text-anchor="middle" font-size="13" fill="#666">Stock price analysis • Network monitoring • Stream processing</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#FF5722"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,122 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#E8EAF6" stroke="#3F51B5" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#3F51B5"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Variables</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Data Containers</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#CDDC39" stroke="#827717" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">1</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(15, 110)">
+    <text x="185" y="20" text-anchor="middle" font-size="16" fill="#3F51B5" font-weight="bold">Variable Declaration Syntax</text>
+    
+    <!-- Basic Variable Declaration -->
+    <g transform="translate(0, 40)">
+      <!-- Python Variables -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="70" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">name = "Alice"</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">age = 25</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">is_student = True</text>
+      </g>
+      
+      <!-- JavaScript Variables -->
+      <g transform="translate(190, 0)">
+        <rect x="0" y="0" width="180" height="70" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">let name = "Alice";</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">const age = 25;</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">var isStudent = true;</text>
+      </g>
+      
+      <!-- TypeScript Variables -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="180" height="70" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#01579B" font-weight="bold">TYPESCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">let name: string = "Alice";</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">const age: number = 25;</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">let isStudent: boolean = true;</text>
+      </g>
+      
+      <!-- C# Variables -->
+      <g transform="translate(190, 80)">
+        <rect x="0" y="0" width="180" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C#</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">string name = "Alice";</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">int age = 25;</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">bool isStudent = true;</text>
+      </g>
+    </g>
+    
+    <!-- Arrays and Collections -->
+    <g transform="translate(0, 180)">
+      <text x="185" y="0" text-anchor="middle" font-size="14" fill="#3F51B5" font-weight="bold">Arrays and Collections</text>
+      
+      <!-- Python Arrays -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="180" height="50" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">numbers = [1, 2, 3, 4, 5]</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">person = {"name": "Alice"}</text>
+      </g>
+      
+      <!-- JavaScript Arrays -->
+      <g transform="translate(190, 20)">
+        <rect x="0" y="0" width="180" height="50" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">const numbers = [1, 2, 3, 4, 5];</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">const person = {name: "Alice"};</text>
+      </g>
+      
+      <!-- TypeScript Arrays -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="180" height="50" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#01579B" font-weight="bold">TYPESCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">const numbers: number[] = [1, 2, 3];</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">interface Person {name: string}</text>
+      </g>
+      
+      <!-- C# Arrays -->
+      <g transform="translate(190, 80)">
+        <rect x="0" y="0" width="180" height="50" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C#</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">int[] numbers = {1, 2, 3, 4, 5};</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">var person = new {Name = "Alice"};</text>
+      </g>
+    </g>
+    
+    <!-- Key Differences -->
+    <g transform="translate(0, 320)">
+      <text x="185" y="0" text-anchor="middle" font-size="14" fill="#3F51B5" font-weight="bold">Key Variable Differences:</text>
+      
+      <rect x="10" y="10" width="350" height="100" fill="#F8F9FF" stroke="#3F51B5" rx="5"/>
+      
+      <text x="20" y="30" font-size="11" fill="#E65100" font-weight="bold">Python:</text>
+      <text x="80" y="30" font-size="10" fill="#666">Dynamic typing, no declaration keywords</text>
+      
+      <text x="20" y="50" font-size="11" fill="#E65100" font-weight="bold">JavaScript:</text>
+      <text x="80" y="50" font-size="10" fill="#666">let, const, var keywords, dynamic typing</text>
+      
+      <text x="20" y="70" font-size="11" fill="#01579B" font-weight="bold">TypeScript:</text>
+      <text x="80" y="70" font-size="10" fill="#666">Optional type annotations, compile-time checking</text>
+      
+      <text x="20" y="90" font-size="11" fill="#4A148C" font-weight="bold">C#:</text>
+      <text x="80" y="90" font-size="10" fill="#666">Strong typing, explicit type declarations required</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="480" width="350" height="60" rx="8" fill="#F8F9FF" stroke="#3F51B5" stroke-width="2"/>
+  <text x="200" y="505" text-anchor="middle" font-size="18" fill="#3F51B5" font-weight="bold">Data Storage Foundation</text>
+  <text x="200" y="525" text-anchor="middle" font-size="14" fill="#666">Memory management • Type safety • Scope control</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="550" width="350" height="20" rx="8" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="200" y="565" text-anchor="middle" font-size="13" fill="#666">State management • Configuration • User data • Application settings</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#F9FBE7" stroke="#827717" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#9E9D24"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Input / Output</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Communication Bridge</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#CDDC39" stroke="#827717" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">1</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(15, 110)">
+    <text x="185" y="20" text-anchor="middle" font-size="16" fill="#827717" font-weight="bold">Console Output Across Languages</text>
+    
+    <!-- Basic Output -->
+    <g transform="translate(0, 40)">
+      <!-- Python Print -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="70" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">print("Hello World")</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">print(f"Age: {age}")</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">name = input("Enter name: ")</text>
+      </g>
+      
+      <!-- JavaScript Console -->
+      <g transform="translate(190, 0)">
+        <rect x="0" y="0" width="180" height="70" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">console.log("Hello World");</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">console.log(`Age: ${age}`);</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">// Browser: prompt("Enter name:")</text>
+      </g>
+      
+      <!-- TypeScript Console -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="180" height="70" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#01579B" font-weight="bold">TYPESCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">console.log("Hello World");</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">console.log(`Age: ${age}`);</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">const name: string = prompt("Name");</text>
+      </g>
+      
+      <!-- C# Console -->
+      <g transform="translate(190, 80)">
+        <rect x="0" y="0" width="180" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C#</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">Console.WriteLine("Hello World");</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">Console.WriteLine($"Age: {age}");</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">string name = Console.ReadLine();</text>
+      </g>
+    </g>
+    
+    <!-- String Formatting -->
+    <g transform="translate(0, 200)">
+      <text x="185" y="0" text-anchor="middle" font-size="14" fill="#827717" font-weight="bold">String Formatting &amp; Interpolation</text>
+      
+      <!-- Python Formatting -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="180" height="60" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">f"Hello {name}, age {age}"</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">"Hello {}, age {}".format(name, age)</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">"Hello %s, age %d" % (name, age)</text>
+      </g>
+      
+      <!-- JavaScript Template Literals -->
+      <g transform="translate(190, 20)">
+        <rect x="0" y="0" width="180" height="60" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">`Hello ${name}, age ${age}`</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">"Hello " + name + ", age " + age</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">name.concat(" is ", age, " years old")</text>
+      </g>
+      
+      <!-- TypeScript Template Literals -->
+      <g transform="translate(0, 90)">
+        <rect x="0" y="0" width="180" height="60" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#01579B" font-weight="bold">TYPESCRIPT</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">`Hello ${name}, age ${age}`</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">const message: string = `Welcome!`;</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">// Same as JavaScript + types</text>
+      </g>
+      
+      <!-- C# String Interpolation -->
+      <g transform="translate(190, 90)">
+        <rect x="0" y="0" width="180" height="60" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+        <text x="90" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C#</text>
+        <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">$"Hello {name}, age {age}"</text>
+        <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">string.Format("Hello {0}", name)</text>
+        <text x="5" y="56" font-size="9" font-family="monospace" fill="#333">"Hello " + name + ", age " + age</text>
+      </g>
+    </g>
+    
+    <!-- Key Differences -->
+    <g transform="translate(0, 370)">
+      <text x="185" y="0" text-anchor="middle" font-size="14" fill="#827717" font-weight="bold">Key I/O Differences:</text>
+      
+      <rect x="10" y="10" width="350" height="100" fill="#F9FBE7" stroke="#827717" rx="5"/>
+      
+      <text x="20" y="30" font-size="11" fill="#E65100" font-weight="bold">Python:</text>
+      <text x="80" y="30" font-size="10" fill="#666">print() function, f-strings, input() for user input</text>
+      
+      <text x="20" y="50" font-size="11" fill="#E65100" font-weight="bold">JavaScript:</text>
+      <text x="80" y="50" font-size="10" fill="#666">console.log(), template literals with backticks</text>
+      
+      <text x="20" y="70" font-size="11" fill="#01579B" font-weight="bold">TypeScript:</text>
+      <text x="80" y="70" font-size="10" fill="#666">Same as JS but with optional type annotations</text>
+      
+      <text x="20" y="90" font-size="11" fill="#4A148C" font-weight="bold">C#:</text>
+      <text x="80" y="90" font-size="10" fill="#666">Console.WriteLine(), string interpolation with $</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="520" width="350" height="40" rx="8" fill="#F9FBE7" stroke="#9E9D24" stroke-width="2"/>
+  <text x="200" y="545" text-anchor="middle" font-size="18" fill="#827717" font-weight="bold">User Communication Master</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="570" width="350" height="10" rx="8" fill="#F0F4C3" stroke="#9E9D24" stroke-width="2"/>
+  <text x="200" y="580" text-anchor="middle" font-size="13" fill="#666">Debug output • User feedback • Logging • Data display</text>
+</svg>

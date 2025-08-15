@@ -1,0 +1,92 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#E8F5E8" stroke="#388E3C" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#4CAF50"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="26" font-weight="bold">Tree Traversal</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Tree Walker</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">2</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(50, 110)">
+    <text x="150" y="20" text-anchor="middle" font-size="16" fill="#388E3C" font-weight="bold">The Three Sacred Journeys</text>
+    
+    <!-- Tree Structure -->
+    <g transform="translate(0, 40)">
+      <!-- Root -->
+      <circle cx="150" cy="30" r="15" fill="#A5D6A7" stroke="#388E3C" stroke-width="3"/>
+      <text x="150" y="36" text-anchor="middle" font-size="12" font-weight="bold">1</text>
+      
+      <!-- Level 2 -->
+      <circle cx="100" cy="70" r="12" fill="#81C784" stroke="#388E3C" stroke-width="2"/>
+      <text x="100" y="76" text-anchor="middle" font-size="11" font-weight="bold">2</text>
+      
+      <circle cx="200" cy="70" r="12" fill="#81C784" stroke="#388E3C" stroke-width="2"/>
+      <text x="200" y="76" text-anchor="middle" font-size="11" font-weight="bold">3</text>
+      
+      <!-- Level 3 -->
+      <circle cx="70" cy="110" r="10" fill="#66BB6A" stroke="#388E3C" stroke-width="2"/>
+      <text x="70" y="115" text-anchor="middle" font-size="10" font-weight="bold">4</text>
+      
+      <circle cx="130" cy="110" r="10" fill="#66BB6A" stroke="#388E3C" stroke-width="2"/>
+      <text x="130" y="115" text-anchor="middle" font-size="10" font-weight="bold">5</text>
+      
+      <circle cx="170" cy="110" r="10" fill="#66BB6A" stroke="#388E3C" stroke-width="2"/>
+      <text x="170" y="115" text-anchor="middle" font-size="10" font-weight="bold">6</text>
+      
+      <circle cx="230" cy="110" r="10" fill="#66BB6A" stroke="#388E3C" stroke-width="2"/>
+      <text x="230" y="115" text-anchor="middle" font-size="10" font-weight="bold">7</text>
+      
+      <!-- Tree connections -->
+      <line x1="150" y1="45" x2="100" y2="58" stroke="#388E3C" stroke-width="2"/>
+      <line x1="150" y1="45" x2="200" y2="58" stroke="#388E3C" stroke-width="2"/>
+      <line x1="100" y1="82" x2="70" y2="100" stroke="#388E3C" stroke-width="2"/>
+      <line x1="100" y1="82" x2="130" y2="100" stroke="#388E3C" stroke-width="2"/>
+      <line x1="200" y1="82" x2="170" y2="100" stroke="#388E3C" stroke-width="2"/>
+      <line x1="200" y1="82" x2="230" y2="100" stroke="#388E3C" stroke-width="2"/>
+    </g>
+    
+    <!-- Three Traversal Methods -->
+    <g transform="translate(0, 180)">
+      <!-- PreOrder -->
+      <g>
+        <text x="0" y="0" font-size="14" fill="#388E3C" font-weight="bold">PreOrder (Root → Left → Right):</text>
+        <text x="0" y="20" font-size="12" fill="#666">Visit: Root first, then recurse</text>
+        <rect x="0" y="30" width="280" height="25" fill="#C8E6C9" stroke="#4CAF50" rx="3"/>
+        <text x="140" y="47" text-anchor="middle" font-size="11" font-weight="bold">1 → 2 → 4 → 5 → 3 → 6 → 7</text>
+        <text x="0" y="70" font-size="10" fill="#666">💡 Use case: Copy tree structure, expression prefix</text>
+      </g>
+      
+      <!-- InOrder -->
+      <g transform="translate(0, 90)">
+        <text x="0" y="0" font-size="14" fill="#388E3C" font-weight="bold">InOrder (Left → Root → Right):</text>
+        <text x="0" y="20" font-size="12" fill="#666">Visit: Left subtree, root, right subtree</text>
+        <rect x="0" y="30" width="280" height="25" fill="#A5D6A7" stroke="#4CAF50" rx="3"/>
+        <text x="140" y="47" text-anchor="middle" font-size="11" font-weight="bold">4 → 2 → 5 → 1 → 6 → 3 → 7</text>
+        <text x="0" y="70" font-size="10" fill="#666">💡 Use case: Get sorted order from BST</text>
+      </g>
+      
+      <!-- PostOrder -->
+      <g transform="translate(0, 180)">
+        <text x="0" y="0" font-size="14" fill="#388E3C" font-weight="bold">PostOrder (Left → Right → Root):</text>
+        <text x="0" y="20" font-size="12" fill="#666">Visit: Children first, then root</text>
+        <rect x="0" y="30" width="280" height="25" fill="#81C784" stroke="#4CAF50" rx="3"/>
+        <text x="140" y="47" text-anchor="middle" font-size="11" font-weight="bold">4 → 5 → 2 → 6 → 7 → 3 → 1</text>
+        <text x="0" y="70" font-size="10" fill="#666">💡 Use case: Delete tree, calculate tree size</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="480" width="350" height="60" rx="8" fill="#F1F8E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="505" text-anchor="middle" font-size="18" fill="#388E3C" font-weight="bold">Hierarchical Navigator</text>
+  <text x="200" y="525" text-anchor="middle" font-size="14" fill="#666">• O(n) time to visit all nodes • Recursive elegance</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="550" width="350" height="20" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="565" text-anchor="middle" font-size="13" fill="#666">File systems • Expression parsing • Decision trees • Syntax analysis</text>
+</svg>

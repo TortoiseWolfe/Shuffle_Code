@@ -1,0 +1,92 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#E3F2FD" stroke="#1976D2" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#2196F3"/>
+  <text x="200" y="65" text-anchor="middle" fill="white" font-family="Arial" font-size="28" font-weight="bold">Two Pointers</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">2</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(50, 110)">
+    <text x="150" y="20" text-anchor="middle" font-size="16" fill="#1976D2" font-weight="bold">The Converging Hunters</text>
+    
+    <!-- Sorted Array -->
+    <text x="0" y="50" font-size="14" fill="#666">Sorted Array:</text>
+    
+    <!-- Array elements -->
+    <rect x="20" y="60" width="35" height="35" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+    <text x="37.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+    
+    <rect x="65" y="60" width="35" height="35" fill="#90CAF9" stroke="#1976D2" stroke-width="2"/>
+    <text x="82.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">3</text>
+    
+    <rect x="110" y="60" width="35" height="35" fill="#64B5F6" stroke="#1976D2" stroke-width="2"/>
+    <text x="127.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">5</text>
+    
+    <rect x="155" y="60" width="35" height="35" fill="#42A5F5" stroke="#1976D2" stroke-width="2"/>
+    <text x="172.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">7</text>
+    
+    <rect x="200" y="60" width="35" height="35" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+    <text x="217.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">9</text>
+    
+    <rect x="245" y="60" width="35" height="35" fill="#1E88E5" stroke="#1976D2" stroke-width="2"/>
+    <text x="262.5" y="82" text-anchor="middle" font-size="14" font-weight="bold">12</text>
+    
+    <!-- Left Pointer -->
+    <path d="M 37.5 45 L 37.5 55" stroke="#FF5722" stroke-width="4" fill="none" marker-end="url(#arrowred)"/>
+    <text x="37.5" y="35" text-anchor="middle" font-size="12" fill="#FF5722" font-weight="bold">LEFT</text>
+    
+    <!-- Right Pointer -->
+    <path d="M 262.5 45 L 262.5 55" stroke="#4CAF50" stroke-width="4" fill="none" marker-end="url(#arrowgreen)"/>
+    <text x="262.5" y="35" text-anchor="middle" font-size="12" fill="#4CAF50" font-weight="bold">RIGHT</text>
+    
+    <!-- Target -->
+    <text x="150" y="130" text-anchor="middle" font-size="14" fill="#666">Target Sum: 8</text>
+    
+    <!-- Movement illustration -->
+    <g transform="translate(0, 150)">
+      <text x="150" y="0" text-anchor="middle" font-size="14" fill="#1976D2" font-weight="bold">How They Move:</text>
+      
+      <!-- Step 1 -->
+      <text x="0" y="25" font-size="12" fill="#666">1 + 12 = 13 (too big)</text>
+      <path d="M 250 30 Q 200 15 150 30" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      <text x="200" y="15" text-anchor="middle" font-size="10" fill="#4CAF50">move right ←</text>
+      
+      <!-- Step 2 -->
+      <text x="0" y="55" font-size="12" fill="#666">1 + 9 = 10 (too big)</text>
+      <path d="M 200 60 Q 175 45 150 60" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+      
+      <!-- Step 3 -->
+      <text x="0" y="85" font-size="12" fill="#666">1 + 7 = 8 ✓ Found!</text>
+      <circle cx="100" cy="90" r="8" fill="#FFC107" stroke="#FF8F00" stroke-width="2"/>
+      <text x="100" y="95" text-anchor="middle" font-size="10" font-weight="bold">🎯</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="380" width="350" height="80" rx="8" fill="#F3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <text x="200" y="405" text-anchor="middle" font-size="18" fill="#1976D2" font-weight="bold">Elegant Pair Finding</text>
+  <text x="200" y="430" text-anchor="middle" font-size="14" fill="#666">• O(n) time instead of O(n²)</text>
+  <text x="200" y="450" text-anchor="middle" font-size="14" fill="#666">• Works on sorted arrays/lists</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="480" width="350" height="80" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <text x="200" y="505" text-anchor="middle" font-size="16" fill="#1976D2" font-weight="bold">🚀 Real World Magic</text>
+  <text x="200" y="525" text-anchor="middle" font-size="13" fill="#666">Database join optimizations</text>
+  <text x="200" y="542" text-anchor="middle" font-size="13" fill="#666">Network packet analysis</text>
+  <text x="200" y="559" text-anchor="middle" font-size="13" fill="#666">Palindrome detection</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#FF5722"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#4CAF50"/>
+    </marker>
+  </defs>
+</svg>

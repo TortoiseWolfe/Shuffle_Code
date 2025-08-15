@@ -1,0 +1,110 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#F3E5F5" stroke="#4A148C" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#673AB7"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Dynamic Programming</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">The Ultimate Optimizer</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#FFC107" stroke="#FF8F00" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">5</text>
+  
+  <!-- Visual Illustration - Fibonacci Example -->
+  <g transform="translate(30, 110)">
+    <text x="170" y="20" text-anchor="middle" font-size="16" fill="#4A148C" font-weight="bold">The Memory Master</text>
+    <text x="170" y="40" text-anchor="middle" font-size="12" fill="#666">Fibonacci: F(n) = F(n-1) + F(n-2)</text>
+    
+    <!-- Without DP - Exponential tree -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="0" font-size="12" fill="#E91E63" font-weight="bold">❌ Without DP: O(2ⁿ)</text>
+      
+      <!-- Tree showing repeated calculations -->
+      <circle cx="80" cy="20" r="12" fill="#FFCDD2" stroke="#E91E63" stroke-width="2"/>
+      <text x="80" y="25" text-anchor="middle" font-size="10" font-weight="bold">F(4)</text>
+      
+      <circle cx="50" cy="50" r="10" fill="#F8BBD9" stroke="#E91E63" stroke-width="1"/>
+      <text x="50" y="54" text-anchor="middle" font-size="8">F(3)</text>
+      
+      <circle cx="110" cy="50" r="10" fill="#F8BBD9" stroke="#E91E63" stroke-width="1"/>
+      <text x="110" y="54" text-anchor="middle" font-size="8">F(2)</text>
+      
+      <circle cx="30" cy="75" r="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1"/>
+      <text x="30" y="78" text-anchor="middle" font-size="7">F(2)</text>
+      
+      <circle cx="70" cy="75" r="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1"/>
+      <text x="70" y="78" text-anchor="middle" font-size="7">F(1)</text>
+      
+      <circle cx="95" cy="75" r="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1"/>
+      <text x="95" y="78" text-anchor="middle" font-size="7">F(1)</text>
+      
+      <circle cx="125" cy="75" r="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1"/>
+      <text x="125" y="78" text-anchor="middle" font-size="7">F(0)</text>
+      
+      <!-- Lines connecting nodes -->
+      <line x1="80" y1="32" x2="50" y2="40" stroke="#E91E63" stroke-width="1"/>
+      <line x1="80" y1="32" x2="110" y2="40" stroke="#E91E63" stroke-width="1"/>
+      <line x1="50" y1="60" x2="30" y2="67" stroke="#E91E63" stroke-width="1"/>
+      <line x1="50" y1="60" x2="70" y2="67" stroke="#E91E63" stroke-width="1"/>
+      <line x1="110" y1="60" x2="95" y2="67" stroke="#E91E63" stroke-width="1"/>
+      <line x1="110" y1="60" x2="125" y2="67" stroke="#E91E63" stroke-width="1"/>
+      
+      <!-- Highlight repeated work -->
+      <ellipse cx="65" cy="75" rx="45" ry="15" fill="none" stroke="#FF5722" stroke-width="2" stroke-dasharray="3,3"/>
+      <text x="65" y="100" text-anchor="middle" font-size="9" fill="#FF5722">Repeated calculations!</text>
+    </g>
+    
+    <!-- With DP - Memoization table -->
+    <g transform="translate(200, 60)">
+      <text x="0" y="0" font-size="12" fill="#4CAF50" font-weight="bold">✅ With DP: O(n)</text>
+      
+      <!-- Memoization table -->
+      <rect x="0" y="10" width="25" height="20" fill="#E8F5E8" stroke="#4CAF50" stroke-width="1"/>
+      <text x="12.5" y="23" text-anchor="middle" font-size="8">F(0)=0</text>
+      
+      <rect x="25" y="10" width="25" height="20" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+      <text x="37.5" y="23" text-anchor="middle" font-size="8">F(1)=1</text>
+      
+      <rect x="50" y="10" width="25" height="20" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1"/>
+      <text x="62.5" y="23" text-anchor="middle" font-size="8">F(2)=1</text>
+      
+      <rect x="75" y="10" width="25" height="20" fill="#81C784" stroke="#4CAF50" stroke-width="1"/>
+      <text x="87.5" y="23" text-anchor="middle" font-size="8">F(3)=2</text>
+      
+      <rect x="100" y="10" width="25" height="20" fill="#66BB6A" stroke="#4CAF50" stroke-width="1"/>
+      <text x="112.5" y="23" text-anchor="middle" font-size="8">F(4)=3</text>
+      
+      <text x="62.5" y="50" text-anchor="middle" font-size="9" fill="#4CAF50">Store once, use many!</text>
+      
+      <!-- Arrow pointing to reused value -->
+      <path d="M 62.5 35 Q 70 45 87.5 35" stroke="#FFC107" stroke-width="2" fill="none" marker-end="url(#arrowyellow)"/>
+      <text x="75" y="70" text-anchor="middle" font-size="8" fill="#FFC107">Reused!</text>
+    </g>
+  </g>
+  
+  <!-- Core Principles -->
+  <rect x="25" y="320" width="350" height="100" rx="8" fill="#FAF2FF" stroke="#673AB7" stroke-width="2"/>
+  <text x="200" y="345" text-anchor="middle" font-size="16" fill="#4A148C" font-weight="bold">🧠 Core Magic Principles</text>
+  <text x="200" y="365" text-anchor="middle" font-size="12" fill="#666">1. Optimal Substructure</text>
+  <text x="200" y="382" text-anchor="middle" font-size="12" fill="#666">2. Overlapping Subproblems</text>
+  <text x="200" y="399" text-anchor="middle" font-size="12" fill="#666">3. Memoization or Tabulation</text>
+  
+  <!-- Powers -->
+  <rect x="25" y="430" width="350" height="80" rx="8" fill="#F3E5F5" stroke="#673AB7" stroke-width="2"/>
+  <text x="200" y="455" text-anchor="middle" font-size="18" fill="#4A148C" font-weight="bold">Ultimate Problem Solver</text>
+  <text x="200" y="475" text-anchor="middle" font-size="14" fill="#666">• Exponential → Linear time</text>
+  <text x="200" y="490" text-anchor="middle" font-size="14" fill="#666">• Optimization problems master</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="520" width="350" height="50" rx="8" fill="#EDE7F6" stroke="#673AB7" stroke-width="2"/>
+  <text x="200" y="540" text-anchor="middle" font-size="16" fill="#4A148C" font-weight="bold">💰 Real World Magic</text>
+  <text x="200" y="555" text-anchor="middle" font-size="13" fill="#666">Investment optimization • Resource allocation • AI decision making</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowyellow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 0,6 9,3" fill="#FFC107"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,103 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect width="380" height="580" x="10" y="10" rx="20" fill="#E8F5E8" stroke="#388E3C" stroke-width="4"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="350" height="60" rx="12" fill="#4CAF50"/>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial" font-size="26" font-weight="bold">Switch / Case Statements</text>
+  <text x="200" y="72" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Multi-Language Syntax Guide</text>
+  
+  <!-- Mana Cost -->
+  <circle cx="340" cy="55" r="20" fill="#CDDC39" stroke="#827717" stroke-width="3"/>
+  <text x="340" y="63" text-anchor="middle" font-size="18" font-weight="bold">1</text>
+  
+  <!-- Visual Illustration -->
+  <g transform="translate(20, 110)">
+    <text x="180" y="20" text-anchor="middle" font-size="16" fill="#388E3C" font-weight="bold">Pattern Matching Across Languages</text>
+    
+    <!-- Python (match/case - Python 3.10+) -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="170" height="90" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="5"/>
+      <text x="85" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">PYTHON 3.10+</text>
+      
+      <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">match grade:</text>
+      <text x="15" y="43" font-size="9" font-family="monospace" fill="#333">case "A":</text>
+      <text x="25" y="56" font-size="9" font-family="monospace" fill="#333">print("Excellent")</text>
+      <text x="15" y="69" font-size="9" font-family="monospace" fill="#333">case "B":</text>
+      <text x="25" y="82" font-size="9" font-family="monospace" fill="#333">print("Good")</text>
+      <text x="15" y="95" font-size="9" font-family="monospace" fill="#333">case _:</text>
+    </g>
+    
+    <!-- JavaScript -->
+    <g transform="translate(190, 40)">
+      <rect x="0" y="0" width="170" height="90" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="5"/>
+      <text x="85" y="15" text-anchor="middle" font-size="12" fill="#E65100" font-weight="bold">JAVASCRIPT</text>
+      
+      <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">switch (grade) {</text>
+      <text x="15" y="43" font-size="9" font-family="monospace" fill="#333">case "A":</text>
+      <text x="25" y="56" font-size="9" font-family="monospace" fill="#333">console.log("Excellent");</text>
+      <text x="25" y="69" font-size="9" font-family="monospace" fill="#333">break;</text>
+      <text x="15" y="82" font-size="9" font-family="monospace" fill="#333">case "B":</text>
+      <text x="25" y="95" font-size="9" font-family="monospace" fill="#333">console.log("Good");</text>
+    </g>
+    
+    <!-- TypeScript -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="170" height="90" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="5"/>
+      <text x="85" y="15" text-anchor="middle" font-size="12" fill="#01579B" font-weight="bold">TYPESCRIPT</text>
+      
+      <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">switch (grade: string) {</text>
+      <text x="15" y="43" font-size="9" font-family="monospace" fill="#333">case "A":</text>
+      <text x="25" y="56" font-size="9" font-family="monospace" fill="#333">result = "Excellent";</text>
+      <text x="25" y="69" font-size="9" font-family="monospace" fill="#333">break;</text>
+      <text x="15" y="82" font-size="9" font-family="monospace" fill="#333">default:</text>
+      <text x="25" y="95" font-size="9" font-family="monospace" fill="#333">result = "Unknown";</text>
+    </g>
+    
+    <!-- C# -->
+    <g transform="translate(190, 150)">
+      <rect x="0" y="0" width="170" height="90" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="5"/>
+      <text x="85" y="15" text-anchor="middle" font-size="12" fill="#4A148C" font-weight="bold">C# (Modern)</text>
+      
+      <text x="5" y="30" font-size="9" font-family="monospace" fill="#333">var result = grade switch</text>
+      <text x="5" y="43" font-size="9" font-family="monospace" fill="#333">{</text>
+      <text x="15" y="56" font-size="9" font-family="monospace" fill="#333">"A" =&gt; "Excellent",</text>
+      <text x="15" y="69" font-size="9" font-family="monospace" fill="#333">"B" =&gt; "Good",</text>
+      <text x="15" y="82" font-size="9" font-family="monospace" fill="#333">_ =&gt; "Unknown"</text>
+      <text x="5" y="95" font-size="9" font-family="monospace" fill="#333">};</text>
+    </g>
+    
+    <!-- Key Differences -->
+    <g transform="translate(0, 260)">
+      <text x="180" y="0" text-anchor="middle" font-size="14" fill="#388E3C" font-weight="bold">Key Syntax Differences:</text>
+      
+      <rect x="10" y="10" width="340" height="120" fill="#F1F8E9" stroke="#388E3C" rx="5"/>
+      
+      <text x="20" y="30" font-size="11" fill="#E65100" font-weight="bold">Python:</text>
+      <text x="80" y="30" font-size="10" fill="#666">match/case with colon, underscore for default</text>
+      
+      <text x="20" y="50" font-size="11" fill="#E65100" font-weight="bold">JavaScript:</text>
+      <text x="80" y="50" font-size="10" fill="#666">switch() with break; statements required</text>
+      
+      <text x="20" y="70" font-size="11" fill="#01579B" font-weight="bold">TypeScript:</text>
+      <text x="80" y="70" font-size="10" fill="#666">Same as JS + optional type annotations</text>
+      
+      <text x="20" y="90" font-size="11" fill="#4A148C" font-weight="bold">C#:</text>
+      <text x="80" y="90" font-size="10" fill="#666">Switch expressions with arrow syntax</text>
+      
+      <text x="20" y="110" font-size="11" fill="#388E3C" font-weight="bold">Benefit:</text>
+      <text x="80" y="110" font-size="10" fill="#666">Cleaner than if/else chains for multiple values</text>
+    </g>
+  </g>
+  
+  <!-- Powers -->
+  <rect x="25" y="450" width="350" height="80" rx="8" fill="#F8FFF8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="475" text-anchor="middle" font-size="18" fill="#388E3C" font-weight="bold">Pattern Matching Master</text>
+  <text x="200" y="495" text-anchor="middle" font-size="14" fill="#666">More readable than long if/else chains</text>
+  <text x="200" y="510" text-anchor="middle" font-size="14" fill="#666">Compiler optimizations possible</text>
+  <text x="200" y="525" text-anchor="middle" font-size="14" fill="#666">Perfect for categorical data</text>
+  
+  <!-- Real World Applications -->
+  <rect x="25" y="540" width="350" height="30" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="200" y="560" text-anchor="middle" font-size="13" fill="#666">State machines • Menu systems • Command routing • Data categorization</text>
+</svg>
